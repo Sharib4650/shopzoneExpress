@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+/* Reset and basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #0073e6;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #0073e6;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.product-card button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.product-card button:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SHOPZONE</title>
+  <link rel="stylesheet" href="style.css" />
+</style>
+</head>
+<body>
+  <header>
+    <h1>SHOPZONE</h1>
+    <p>Your favorite affiliate shopping site</p>
+  </header>
+
+  <main>
+    <section class="product-grid">
+      <article class="product-card">
+        <img src="https://via.placeholder.com/200" alt="boat wave pro 47 smartwatch" />
+        <h2>Wireless Headphones</h2>
+        <p>$59.99</p>
+        <a href="https://fktr.in/p6jarle" target="_blank" rel="noopener">
+          <button>Buy Now</button>
+        </a>
+      </article>
+
+      <article class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Smart Watch" />
+        <h2>Smart Watch</h2>
+        <p>$129.99</p>
+        <a href="https://fktr.in/p6jarle" target="_blank" rel="noopener">
+          <button>Buy Now</button>
+        </a>
+      </article>
+
+      <article class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Bluetooth Speaker" />
+        <h2>Bluetooth Speaker</h2>
+        <p>$39.99</p>
+        <a href="https://example.com/affiliate-link3" target="_blank" rel="noopener">
+          <button>Buy Now</button>
+        </a>
+      </article>
+
+      <article class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Fitness Tracker" />
+        <h2>Fitness Tracker</h2>
+        <p>$89.99</p>
+        <a href="https://example.com/affiliate-link4" target="_blank" rel="noopener">
+          <button>Buy Now</button>
+        </a>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
